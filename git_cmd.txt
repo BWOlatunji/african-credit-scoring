@@ -1,0 +1,7 @@
+cd "C:\3MTT Mentorship Program\1-african-credit-scoring-challenge\credit-scoring-repo"
+git init
+git add -A
+git commit -m "African credit scoring: research notebooks, scorecard and production API"
+git branch -M main
+git remote add origin https://github.com/<your-username>/<repo-name>.git
+git push -u origin main

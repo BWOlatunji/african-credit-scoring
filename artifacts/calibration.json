@@ -1,0 +1,5 @@
+{
+  "method": "identity",
+  "fitted_on": null,
+  "note": "Replace with recalibrate.fit_platt(...) on recent matured loans."
+}

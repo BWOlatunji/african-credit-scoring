@@ -1,0 +1,45 @@
+{
+  "scale": {
+    "base_score": 600.0,
+    "base_odds": 50.0,
+    "pdo": 20.0,
+    "min_score": 300.0,
+    "max_score": 850.0
+  },
+  "bands": [
+    {
+      "name": "A",
+      "min_score": 640,
+      "label": "Very low risk",
+      "policy": "Approve"
+    },
+    {
+      "name": "B",
+      "min_score": 620,
+      "label": "Low risk",
+      "policy": "Approve"
+    },
+    {
+      "name": "C",
+      "min_score": 590,
+      "label": "Moderate risk",
+      "policy": "Approve with standard limits"
+    },
+    {
+      "name": "D",
+      "min_score": 550,
+      "label": "High risk",
+      "policy": "Refer: manual review, smaller amount or risk-based price"
+    },
+    {
+      "name": "E",
+      "min_score": null,
+      "label": "Very high risk",
+      "policy": "Decline"
+    }
+  ],
+  "overlays": {
+    "new_market": "Refer: market without local outcome data (pilot only)",
+    "unknown_code": "Refer: lender or product not seen in training"
+  }
+}

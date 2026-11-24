@@ -1,0 +1,7 @@
+# Only the service code, the trained artifacts and the requirements go into the image
+*
+!credit_scoring/
+!api/
+!artifacts/
+!requirements-prod.txt
+**/__pycache__

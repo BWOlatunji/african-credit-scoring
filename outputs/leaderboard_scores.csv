@@ -1,0 +1,4 @@
+submission,file,public_f1,private_f1,submitted,note
+R1 submission,outputs/sub_m4_r1.csv,0.614492753,0.642377756,2026-11-24,Late submission scored by Zindi after the competition closed
+Probe: Ghana all 0,outputs/probe_r1_ghana0.csv,0.46031746,0.50065189,2026-11-24,Diagnostic only: R1 Kenya predictions with every Ghana loan set to 0
+Probe: Ghana all 1,outputs/probe_r1_ghana1.csv,0.306465899,0.306881405,2026-11-24,Diagnostic only: R1 Kenya predictions with every Ghana loan set to 1

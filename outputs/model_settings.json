@@ -1,0 +1,39 @@
+{
+  "competition": {
+    "features": [
+      "log_amount_lcu",
+      "markup",
+      "duration",
+      "is_new",
+      "lender_share",
+      "lender_id",
+      "loan_type",
+      "daily_rate",
+      "markup_high",
+      "markup_excess"
+    ],
+    "model": "LightGBM",
+    "params": {},
+    "threshold": 0.3
+  },
+  "production": {
+    "features": [
+      "log_amount_lcu",
+      "duration",
+      "is_new",
+      "lender_share",
+      "lender_id",
+      "loan_type",
+      "hist_n_prior",
+      "hist_days_since_last",
+      "hist_log_amount_vs_prior"
+    ],
+    "model": "LightGBM",
+    "params": {
+      "num_leaves": 7,
+      "min_child_samples": 200,
+      "n_estimators": 600,
+      "learning_rate": 0.025
+    }
+  }
+}

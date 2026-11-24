@@ -1,0 +1,234 @@
+{
+  "model_name": "P1 production (LightGBM)",
+  "model_version": "p1-20261124-20d43743",
+  "package_version": "1.0.0",
+  "trained_at_utc": "2026-11-24T19:38:57+00:00",
+  "features": [
+    "log_amount_lcu",
+    "duration",
+    "is_new",
+    "lender_share",
+    "lender_id",
+    "loan_type",
+    "hist_n_prior",
+    "hist_days_since_last",
+    "hist_log_amount_vs_prior"
+  ],
+  "categorical_features": [
+    "lender_id",
+    "loan_type"
+  ],
+  "categories": {
+    "lender_id": [
+      "245684",
+      "251804",
+      "267277",
+      "267278",
+      "296540",
+      "296542",
+      "297182",
+      "297183"
+    ],
+    "loan_type": [
+      "Type_1",
+      "Type_10",
+      "Type_11",
+      "Type_12",
+      "Type_13",
+      "Type_14",
+      "Type_15",
+      "Type_16",
+      "Type_17",
+      "Type_18",
+      "Type_19",
+      "Type_2",
+      "Type_20",
+      "Type_21",
+      "Type_22",
+      "Type_23",
+      "Type_24",
+      "Type_3",
+      "Type_4",
+      "Type_5",
+      "Type_6",
+      "Type_7",
+      "Type_8",
+      "Type_9"
+    ]
+  },
+  "seen_in_training": {
+    "lender_id": [
+      "245684",
+      "251804",
+      "267277",
+      "267278"
+    ],
+    "loan_type": [
+      "Type_1",
+      "Type_10",
+      "Type_11",
+      "Type_12",
+      "Type_13",
+      "Type_14",
+      "Type_15",
+      "Type_16",
+      "Type_17",
+      "Type_18",
+      "Type_19",
+      "Type_2",
+      "Type_20",
+      "Type_21",
+      "Type_22",
+      "Type_23",
+      "Type_24",
+      "Type_4",
+      "Type_5",
+      "Type_6",
+      "Type_7",
+      "Type_9"
+    ]
+  },
+  "markets_with_outcomes": [
+    "Kenya"
+  ],
+  "params": {
+    "n_estimators": 600,
+    "learning_rate": 0.025,
+    "num_leaves": 7,
+    "min_child_samples": 200,
+    "reg_lambda": 0.0,
+    "colsample_bytree": 1.0,
+    "subsample": 1.0,
+    "subsample_freq": 0
+  },
+  "training_data": {
+    "file": "Train.csv",
+    "sha256": "20d437430408084a0c9606de05426def9f19eabde12e02611bc3480a25f30015",
+    "rows": 68654,
+    "defaults": 1258,
+    "disbursed_from": "2021-10-04",
+    "disbursed_to": "2024-11-14"
+  },
+  "validation": {
+    "scheme_B_oof_roc_auc": 0.8715994240811563,
+    "scheme_B_oof_mean_pd": 0.018241511097502015,
+    "actual_default_rate": 0.0183237684621435
+  },
+  "reference": {
+    "numeric_decile_edges": {
+      "log_amount_lcu": [
+        1.0986122886681098,
+        6.975413927455952,
+        7.576097340623111,
+        7.912056888179006,
+        8.334711621820917,
+        8.565983355585669,
+        8.853808274977197,
+        9.1874810778301,
+        9.559531375633517,
+        10.12872490963771,
+        16.951004817371683
+      ],
+      "duration": [
+        1.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        1096.0
+      ],
+      "is_new": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "lender_share": [
+        0.0,
+        0.0,
+        0.0348897537665743,
+        0.18228798041769018,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        1.16811916407292
+      ],
+      "hist_n_prior": [
+        0.0,
+        1.0,
+        2.0,
+        4.0,
+        6.0,
+        9.0,
+        12.0,
+        16.0,
+        23.0,
+        36.0,
+        249.0
+      ],
+      "hist_days_since_last": [
+        1.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        7.0,
+        8.0,
+        10.0,
+        16.0,
+        787.0
+      ],
+      "hist_log_amount_vs_prior": [
+        -5.780113274238227,
+        -0.9807875882546888,
+        -0.4678274227158745,
+        -0.19308501769272543,
+        -0.012727347277113665,
+        0.10709279713718978,
+        0.2414081927698551,
+        0.3883112846172819,
+        0.5629344359176738,
+        0.8188154673441552,
+        4.221530564164671
+      ]
+    },
+    "numeric_missing_share": {
+      "log_amount_lcu": 0.0,
+      "duration": 0.0,
+      "is_new": 0.0,
+      "lender_share": 0.0,
+      "hist_n_prior": 0.0,
+      "hist_days_since_last": 0.09341043493459959,
+      "hist_log_amount_vs_prior": 0.09341043493459959
+    },
+    "band_distribution": {
+      "A": 0.4904739709266758,
+      "B": 0.15167360969499227,
+      "C": 0.21815189209660035,
+      "D": 0.1028053718647129,
+      "E": 0.036895155417018675
+    }
+  },
+  "library_versions": {
+    "lightgbm": "4.7.0",
+    "pandas": "3.0.5",
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.1"
+  }
+}

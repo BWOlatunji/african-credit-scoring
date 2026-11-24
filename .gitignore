@@ -1,0 +1,10 @@
+# Python / Jupyter
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Competition data: download from Zindi (not redistributable)
+Train.csv
+Test.csv
+SampleSubmission.csv
